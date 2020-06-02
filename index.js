@@ -38,7 +38,7 @@ client.on('message', (message) => {
     return message.reply('pong');
   }
 
-  if(message.content == '!si') {
+  if(message.content == '!서버상태') {
     let embed = new Discord.RichEmbed()
     let img = 'https://cdn.discordapp.com/attachments/717205181502324868/717207192695996557/cbjr21565491229_1.jpg';
     var duration = moment.duration(client.uptime).format(" D [일], H [시간], m [분], s [초]");
@@ -97,6 +97,7 @@ client.on('message', (message) => {
       {name: '!청소', desc: '텍스트 지움(관리자만 사용가능)'},
       {name: '!초대코드', desc: '해당 채널의 초대 코드 표기'},
       {name: '!초대코드2', desc: '봇이 들어가있는 모든 채널의 초대 코드 표기'},
+      {name: '!서버상태', desc: '현재 서버 상태 표시'},
     ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
