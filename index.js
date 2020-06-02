@@ -143,9 +143,9 @@ client.on('message', (message) => {
     if(message.member != null) { // 채널에서 공지 쓸 때
       let contents = message.content.slice('!전체공지2'.length);
       let embed = new Discord.RichEmbed()
-        .setAuthor('공지 of 문이 BOT')
+        .setAuthor('! MOON 문이가 공지를 보냈어요!')
         .setColor('#186de6')
-        .setFooter(`문이 BOT ❤️`)
+        .setFooter(`https://discord.gg/BDUJXgQ`)
         .setTimestamp()
   
       embed.addField('공지: ', contents);
